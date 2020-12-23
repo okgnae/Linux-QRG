@@ -1,5 +1,9 @@
 ### nmcli Network Manager Command Line Interface
 
+# Configuration file locations
+ls -l /etc/NetworkManager/system-connections
+
+
 
 ### Setup Interface enp0s3
 # List Interfaces
