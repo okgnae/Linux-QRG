@@ -1,0 +1,48 @@
+### nmcli Network Manager Command Line Interface
+
+
+### Setup Interface enp0s3
+# List Interfaces
+nmcli device
+
+# Set connect on boot and interface to be managed my nmcli
+nmcli device set ifname enp0s3 autoconnect yes managed yes 
+
+# set IPv4 address
+nmcli connection modify enp0s3 ipv4.addresses 192.168.1.131/24
+
+# set gateway
+nmcli connection modify enp0s3 ipv4.gateway 192.168.1.1
+
+# set DNS
+nmcli connection modify enp0s3 ipv4.dns 192.168.1.1
+
+# set DNS search base
+# nmcli connection modify enp0s3 ipv4.dns-search
+
+# set manual for static setting (it's [auto] for DHCP)
+nmcli connection modify enp0s3 ipv4.method manual
+
+
+
+### Setup Interface enp0s8
+# List Interfaces
+nmcli device
+
+# Set connect on boot and interface to be managed my nmcli
+nmcli device set ifname enp0s8 autoconnect yes managed yes 
+
+# set IPv4 address
+nmcli connection modify enp0s8 ipv4.addresses 10.0.0.131/24
+
+# set gateway
+nmcli connection modify enp0s8 ipv4.gateway 10.0.0.1
+
+# set DNS
+nmcli connection modify enp0s8 ipv4.dns 10.0.0.11
+
+# set DNS search base
+nmcli connection modify enp0s8 ipv4.dns-search hq.corp
+
+# set manual for static setting (it's [auto] for DHCP)
+nmcli connection modify enp0s8 ipv4.method manual
