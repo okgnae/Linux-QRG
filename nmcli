@@ -1,7 +1,8 @@
 ### nmcli Network Manager Command Line Interface
 
 # Configuration file locations
-ls -l /etc/NetworkManager/system-connections
+ls -l /etc/NetworkManager/
+ls -l /etc/NetworkManager/system-connections/
 
 
 
