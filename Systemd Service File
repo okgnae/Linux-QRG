@@ -1,0 +1,29 @@
+####################################################################
+[Unit]
+Description=https://home.openweathermap.org
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/openweather_api
+ExecStart=/usr/bin/python3 /opt/openweather_api/openweather_api.py
+Restart=always
+RestartSec=4
+
+[Install]
+WantedBy=multi-user.target
+####################################################################
+
+
+cp FileName.service /usr/lib/systemd/system
+
+systemctl enable FileName.service
+
+systemctl start FileName.service
+
+systemctl status FileName.service
+
+systemctl restart FileName.service
+
+systemctl stop FileName.service
