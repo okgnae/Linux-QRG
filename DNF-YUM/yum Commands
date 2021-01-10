@@ -1,0 +1,8 @@
+### List Packages
+yum list
+
+### update packages
+yum update
+
+### remove a package by name
+yum remove kernel
