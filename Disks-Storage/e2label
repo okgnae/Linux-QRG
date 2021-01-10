@@ -1,0 +1,3 @@
+# Usage: e2label device [newlabel]
+e2label /dev/sdb2 EXT3
+
