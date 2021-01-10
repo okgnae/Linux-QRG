@@ -1,0 +1,14 @@
+### Declare a user
+crontab -u ${USERNAME}
+
+### list crontab contents
+crontab -l
+
+### Edit Crontab contents
+crontab -e
+
+### Delete Current users Crontab contents
+crontab -r
+
+### Delete specified users Crontab contents
+crontab -u ${USERNAME} -r
