@@ -1,2 +1,14 @@
 ### mounts filesystems at boot
-# /etc/fstab
+cat /etc/fstab
+
+[Storgae Device]                                 [Mount Point]    [Filesystem Type]     [Mount Options]
+/dev/sda1                                        /boot            ext4                  defaults 0 0
+
+### Mount with UUID
+UUID=d9de98bc-2043-4fa4-9b98-49b993d70e29        /mnt/xfs         xfs	                  defaults 0 0
+
+### Mount with LABEL (make lable with e2label)
+LABEL=EXT3                                       /mnt/ext3        ext3                  defaults 0 0
+
+### Mount with storage device path
+/dev/sdb3                                        /mnt/ext4        ext4                  defaults 0 0
