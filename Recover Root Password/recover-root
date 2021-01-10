@@ -1,1 +1,37 @@
-###
+### Must have console / physical access
+
+# first reboot the system
+reboot
+
+# Interupt boot with "e"
+# hit "e" right when boot starts to make sure you inturupt grub
+
+# Edit the kernel line in the bootloader
+# It will start with "linux"
+# Remove "rhgb quiet" from the end of the bootloader line
+# Add "rd.break" to the end of the bootloader line
+
+# Press "Ctrl-x" to continue with the boot process after you edited the bootloader configuration
+
+# Kernel will load
+# wait till you get an option to enter emergency mode
+
+# Press "Enter" to access a shell promt
+
+### In mainteance mode you can use common commands (ls, cd) to explore the filesystem
+
+# Mount the sysroot filesystem with read write permissions
+mount -o remount,rw /sysroot
+
+# Set root filesystem to /sysroot
+chroot /sysroot
+
+# Use passwd
+passwd
+
+# Create autorelabel file for SELinux
+touch /.autorelabel
+
+# Then reboot the system by exiting (twice)
+exit
+exit
