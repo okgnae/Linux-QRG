@@ -1,0 +1,4 @@
+### Generate a grub config file
+### Reads config from /etc/default/grub and /etc/grub.d/
+
+grub2-mkconfig -o /boot/grub2/grub.cfg
