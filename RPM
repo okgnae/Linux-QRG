@@ -1,0 +1,12 @@
+### List Packages by name
+rpm -q kernel
+
+### List all Packages
+rpm -qa
+rpm -qa | grep kernel
+
+### Install a package
+rpm -i /path/PackageName.rpm
+
+### Remove Packages (Requiers complete package name)
+rpm -e kernel-5.8.15-301.fc33.x86_64
