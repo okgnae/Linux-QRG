@@ -1,0 +1,22 @@
+### Must have console / physical access
+
+# first reboot the system
+reboot
+
+# Interupt boot with "e"
+# hit "e" right when boot starts to make sure you inturupt grub
+
+# Edit the kernel line in the bootloader
+# It will start with "linux"
+
+# At the end of that line and add "rw init=/bin/bash"
+# Press "Ctrl-x" to continue with the boot process after you edited the bootloader configuration
+
+# Use passwd
+passwd
+
+# Create autorelabel file for SELinux
+touch /.autorelabel
+
+# Then reboot the system by exiting (twice)
+/sbin/reboot -f
