@@ -1,0 +1,9 @@
+### Create file under /etc/yum.repos.d/
+### File name local.repo
+cat << EOF > /etc/yum.repos.d/local.repo
+[Local]
+name=Loacl
+baseurl=file:///mnt/dvd/BaseOS
+enabled=1
+gpgcheck=0
+EOF
