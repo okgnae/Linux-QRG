@@ -6,3 +6,6 @@ yum update
 
 ### remove a package by name
 yum remove kernel
+
+### View avaliable repos
+yum repolist
