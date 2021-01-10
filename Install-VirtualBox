@@ -1,0 +1,16 @@
+### For Fadora 33
+### https://forums.fedoraforum.org/showthread.php?325020-Virtualbox-install-error-python(abi)
+
+mkdir /opt/virtualbox/
+
+wget https://download.virtualbox.org/virtualbox/6.1.16/VirtualBox-6.1-6.1.16_140961_fedora32-1.x86_64.rpm -O /opt/virtualbox/VirtualBox-6.1-6.1.16_140961_fedora32-1.x86_64.rpm
+
+dnf install rpmrebuild -y
+
+rpmrebuild -enp /opt/virtualbox/VirtualBox-6.1-6.1.16_140961_fedora32-1.x86_64.rpm
+
+dnf install /root/rpmbuild/RPMS/x86_64/VirtualBox-6.1-6.1.16_140961_fedora32-1.x86_64.rpm
+
+dnf install kernel-devel kernel-devel-5.8.15-301.fc33.x86_64 gcc make perl -y
+
+vboxconfig
