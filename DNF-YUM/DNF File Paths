@@ -1,1 +1,5 @@
-###
+### DNF Repo files
+ll /etc/yum.repos.d/
+
+### Main DNF conf file 
+at /etc/dnf/dnf.conf 
