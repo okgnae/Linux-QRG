@@ -1,1 +1,4 @@
-/boot
+### boot
+ll /boot/grub2/
+
+### etc
