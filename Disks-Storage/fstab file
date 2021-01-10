@@ -1,0 +1,2 @@
+### mounts filesystems at boot
+# /etc/fstab
