@@ -1,1 +1,3 @@
-#
+### Enable swap on a device
+[command] [device]
+swapon    /dev/sdb4
