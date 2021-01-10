@@ -1,0 +1,4 @@
+mkdir /mnt
+mkdir /mnt/ext3
+mkdir /mnt/ext4
+mkdir /mnt/xfs
