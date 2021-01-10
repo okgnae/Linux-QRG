@@ -3,3 +3,4 @@ cat /etc/default/grub
 
 ### etc (for editing)
 cat /etc/default/grub
+ll /etc/grub.d/
