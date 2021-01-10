@@ -1,4 +1,5 @@
-### boot
-ll /boot/grub2/
+### boot (do not edit)
+cat /etc/default/grub
 
-### etc
+### etc (for editing)
+cat /etc/default/grub
