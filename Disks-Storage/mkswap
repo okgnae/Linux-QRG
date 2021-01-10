@@ -1,1 +1,4 @@
-#
+# partition swap filesystem
+
+[Command]  [Label]    [Device]
+mkswap     -L SWAP    /dev/sdb4
