@@ -1,1 +1,3 @@
-#
+### Disable swap on a device
+[command]  [device]
+swapoff    /dev/sdb4
