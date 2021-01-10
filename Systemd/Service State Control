@@ -1,0 +1,5 @@
+systemctl enable FileName.service
+systemctl start FileName.service
+systemctl status FileName.service
+systemctl restart FileName.service
+systemctl stop FileName.service
