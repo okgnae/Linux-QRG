@@ -1,0 +1,4 @@
+### View filesystem attrabutes with blkid
+blkid
+
+blkid | grep /dev/sdb1 >> /etc/fstab
