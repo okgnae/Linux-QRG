@@ -1,1 +1,18 @@
-fdisk
+### Edit a storage device; Enter fdisk menu
+fdisk  /dev/sdb
+
+### Get help in fdisk menu
+m
+
+### add a new partition, 500 Mega Bytes
+Command (m for help): n
+Select (default p): p
+Partition number (3,4, default 3): 3
+First sector (2050048-25165823, default 2050048): 
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2050048-25165823, default 25165823): +500M
+
+### print the partition table
+p
+
+### change a partition type
+t
