@@ -1,1 +1,11 @@
-mkfs -t
+### Set /dev/sdb1 filesystem type to xfs
+mkfs -t xfs /dev/sdb1
+
+### Set /dev/sdb1 filesystem type to ext3
+mkfs -t ext3 /dev/sdb2
+
+### Set /dev/sdb1 filesystem type to ext4
+mkfs -t ext4 /dev/sdb3
+
+
+
